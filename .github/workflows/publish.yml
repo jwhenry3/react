@@ -1,0 +1,36 @@
+name: Publish Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://npm.pkg.github.com/
+      - name: Cache
+        uses: actions/cache@v2.1.5
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-build
+      # run commands for libraries
+      - name: Install Library Dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GH_WRITE_PACKAGE_TOKEN}}
+      - name: Publish Library
+        run: yarn build && cd dist && npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GH_WRITE_PACKAGE_TOKEN}}
