@@ -1,14 +1,6 @@
-# Cytracom React Template
+# React React Template
 
 > React Project Boilerplate
-
-### Getting Started
-
-This project uses `@cytracom/telos` so you will need to make sure you add the following to your `~/.npmrc`
-
-```
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN_HERE
-```
 
 ### Development
 
