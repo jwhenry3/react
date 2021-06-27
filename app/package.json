@@ -1,5 +1,5 @@
 {
-  "name": "@cytracom/desktop-app",
+  "name": "@jwhenry3/react-app",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -18,8 +18,7 @@
   "dependencies": {
     "@material-ui/core": "file:../node_modules/@material-ui/core",
     "@emotion/react": "file:../node_modules/@emotion/react",
-    "@cytracom/desktop": "file:../dist",
-    "@cytracom/telos": "file:../node_modules/@cytracom/telos",
+    "@jwhenry3/react": "file:../dist",
     "next": "^10.1.3",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
