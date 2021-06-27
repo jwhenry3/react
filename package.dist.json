@@ -1,10 +1,10 @@
 {
-  "name": "@cytracom/softphone",
+  "name": "@jwhenry3/react",
   "version": "1.0.0",
-  "description": "Cytracom Softphone Feature",
+  "description": "React Project Template",
   "author": "jwhenry3",
   "license": "MIT",
-  "repository": "cytracom/softphone",
+  "repository": "jwhenry3/react",
   "main": "index.js",
   "module": "index.modern.js",
   "engines": {
@@ -15,7 +15,6 @@
     "babel-loader": "8.1.0"
   },
   "peerDependencies": {
-    "@cytracom/telos": "^1.0.8",
     "@emotion/react": "^11.1.5",
     "@material-ui/core": "^4.11.4",
     "@material-ui/lab": "^4.0.0-alpha.58",
