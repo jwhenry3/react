@@ -1,10 +1,10 @@
 {
-  "name": "@cytracom/softphone",
+  "name": "@jwhenry3/react",
   "version": "1.0.0",
-  "description": "Cytracom Softphone Feature",
+  "description": "React Project Template",
   "author": "jwhenry3",
   "license": "MIT",
-  "repository": "cytracom/softphone",
+  "repository": "jwhenry3/react",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
